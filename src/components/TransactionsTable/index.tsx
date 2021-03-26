@@ -1,9 +1,14 @@
 import { useTransactions } from "../../hooks/useTransactions";
 import { Container } from "./styles";
+import { AiFillDelete } from 'react-icons/ai';
 
 export function TransactionsTable(){
 
-    const { transactions } = useTransactions();
+    const { transactions, deleteTransaction } = useTransactions();
+
+    function handleDeleteTransaction(transactionId: number){   
+        deleteTransaction(transactionId);             
+    }
 
     return(
         <Container>
@@ -14,6 +19,7 @@ export function TransactionsTable(){
                         <th>Valor</th>
                         <th>Categoria</th>
                         <th>Data</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -26,6 +32,7 @@ export function TransactionsTable(){
                             }).format(transaction.amount)}</td>
                             <td>{transaction.category}</td>
                             <td>{new Intl.DateTimeFormat('pt-BR').format(new Date(transaction.createdAt))}</td>
+                            <td onClick={() => { handleDeleteTransaction(transaction.id) }}><AiFillDelete /></td>
                         </tr>
                     )
                     )}

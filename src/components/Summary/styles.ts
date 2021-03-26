@@ -32,4 +32,17 @@ export const Container = styled.div`
             color: #FFF;
         }
     }
+
+    @media (max-width: 720px){
+        display: flex;
+        flex-direction: column;
+
+        div {
+            padding: 0.5rem 1rem;
+
+            strong {
+                font-size: 1.8rem;
+            }
+        }
+    }
 `

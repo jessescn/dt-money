@@ -43,6 +43,12 @@ createServer({
       const data = JSON.parse(request.requestBody);
 
       return schema.create('transaction', data);
+    });
+
+    this.delete('/transactions/:id', (schema, request) => {
+      const id = request.params.id;
+    
+      return {id};
     })
   }
 })

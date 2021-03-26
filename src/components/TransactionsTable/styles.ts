@@ -34,8 +34,28 @@ export const Container = styled.div`
             &.withdraw {
                 color: var(--red);
             }
+
+            svg {
+                transition: color 0.2s;
+                cursor: pointer;
+            }
+
+            svg:hover {
+                color: var(--red);
+                transform: scale(1.05);
+            }
         }
 
+    }
+    @media (max-width: 720px){
+        table {
+            font-size: 0.85rem;
 
+            td {
+                padding: 0.5rem;
+            }
+        }
+
+        margin-top: 2rem;
     }
 `
