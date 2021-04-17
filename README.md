@@ -1,8 +1,8 @@
-# ![logo](./public/favico.png) dt-money
+# ![logo](./public/favico.png) sos-money
 
-Gerencie seus gastos de forma simples e organizada.
+Organize your expenses simply and quickly!
 
-O projeto foi desenvolvido utilizando estas tecnologias
+Project developed using those tecnologies:
 
 - [React](https://pt-br.reactjs.org/)
 - [Typescript](https://www.typescriptlang.org/)
@@ -11,6 +11,6 @@ O projeto foi desenvolvido utilizando estas tecnologias
 - [React-Icons](https://react-icons.github.io/react-icons/)
 - [Styled-Components](https://styled-components.com/)
 
-## Execução
+## Execute Project
 
-Basta rodar o comando `yarn start` na raiz do projeto após a instalação das dependências. O projeto vai estar rodando em `localhost:3000`.
+Run `yarn dev` in root dir after installing the dependencies. It will be running on `localhost:3000`.
