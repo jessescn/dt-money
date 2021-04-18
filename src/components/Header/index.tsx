@@ -9,7 +9,10 @@ export function Header(props: HeaderProps){
     return(
         <Container>
             <Content>
-                <img src={logo} alt="dt-money"/>
+                <div>
+                    <img src={logo} alt="dt-money"/>
+                    <strong>SOS<span>Money</span></strong>
+                </div>
                 <button onClick={props.onOpenNewTransactionModal} type="button">
                     Nova Transação
                 </button>

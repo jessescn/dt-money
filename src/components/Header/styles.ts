@@ -13,6 +13,21 @@ export const Content = styled.div`
     align-items: center;
     justify-content: space-between;
 
+    div {
+        display: flex;
+        justify-content: center;
+        color: var(--background);
+        font-size: 1.5rem;
+
+        img {
+            margin-right: 0.5rem;
+        }
+
+        span {
+            color: var(--green);
+        }
+    }
+
     button {
         font-size: 1rem;
         color: #fff;
