@@ -1,6 +1,4 @@
-# SOS-Money
-
-![logo img](src/assets/logo.svg)
+# SOS-Money ![logo img](src/assets/logo.svg)
 
 
 Organize your expenses simply and quickly!
